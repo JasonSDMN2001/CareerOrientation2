@@ -27,6 +27,7 @@ namespace WindowsFormsApp1
             
             Form1 form= new Form1();
             form.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -72,6 +73,7 @@ namespace WindowsFormsApp1
                 this.Hide();
                 Form1 form = new Form1();
                 form.Show();
+                this.Close();
             }
         }
 

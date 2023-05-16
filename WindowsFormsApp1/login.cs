@@ -40,9 +40,9 @@ namespace WindowsFormsApp1
             else
             {
                 this.Hide();
-                Kef1 kef1 = new Kef1(textBox1.Text); 
-                kef1.Show();
-               
+                MainPage mainPage = new MainPage(textBox1.Text);
+                mainPage.Show();
+                this.Close();
             }
         }
     }

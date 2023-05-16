@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
             this.Hide();
             Register register = new Register();
             register.Show();
+            this.Close();
         }
     }
 }
