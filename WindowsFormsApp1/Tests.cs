@@ -19,6 +19,9 @@ namespace WindowsFormsApp1
         List<int> list = new List<int> { 1, 2, 3, 4, 5 };
         Random random = new Random();
         int currentCorrectAns;
+        int score=0;
+        int number_of_try = 1;
+        int totalScore;
         public Tests(string username, string testType)
         {
             InitializeComponent();
@@ -28,12 +31,48 @@ namespace WindowsFormsApp1
 
         private void Tests_Load(object sender, EventArgs e)
         {
-
+            totalScore = list.Count;
             if (testType == "test1")
             {
-               
-                //populateTable(testType);
-                populateTable2(testType,list,random);
+                bool exceded_number_of_tries = false;
+                try
+                {
+                    SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
+                    conn.Open();
+                    String query1 = "Select MAX(number_of_try) from results where testname='" + testType + "'and username='" + username + "'";
+                    SQLiteCommand cmd = new SQLiteCommand(query1, conn);
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        number_of_try = reader.GetInt32(0);
+                    }
+                    conn.Close();
+                    if (number_of_try > 3)
+                    {
+                        exceded_number_of_tries = true;
+                    }
+                    else
+                    {
+                        number_of_try++;
+                    }
+                }catch(Exception ex)
+                {
+
+                }
+                if (!exceded_number_of_tries)
+                {
+                    //populateTable(testType);
+                    populateTable2(testType, list, random);
+                }
+                else
+                {
+                    MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
+                        "now redirecting back to chapter selection");
+                    this.Hide();
+                    Kef1 kef1 = new Kef1(username);
+                    kef1.Show();
+                    this.Close();
+                }
             }
         }
 
@@ -63,50 +102,7 @@ namespace WindowsFormsApp1
             conn.Close();
         }
 
-        private void populateTable(string typeTest)
-        {
-            List<int> list = new List<int> { 1, 2, 3, 4, 5 };
-            Random random = new Random();
-            SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
-            conn.Open();
-            //tableLayoutPanel1.SuspendLayout();
-            for (int i = 1; i < 6; i++)
-            {
-                int randomIndex = random.Next(list.Count);
-                int randomNumber = list[randomIndex];
-                String query1 = "Select * from tests where testType='" + typeTest + "'and id='" + randomNumber + "'";
-                SQLiteCommand cmd = new SQLiteCommand(query1, conn);
-                SQLiteDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    AddLabelTableRow(reader.GetString(2));
-                    groupBox1.Text= reader.GetString(2);
-                    radioButton1.Text= reader.GetString(3);
-                    radioButton2.Text= reader.GetString(4);
-                    radioButton3.Text= reader.GetString(5);
-                    radioButton4.Text= reader.GetString(6);
-                    GroupBox newGroupBox = new GroupBox();
-                    newGroupBox.Text = reader.GetString(2);
-                    newGroupBox.AutoSize = true;
-                    for (int j = 3; j <= 6; j++) { 
-
-                        RadioButton radioButton = new RadioButton();
-                        radioButton.Text = reader.GetString(j);
-                        radioButton.AutoSize = true;
-                        radioButton.Name = reader.GetString(j);
-                        newGroupBox.Controls.Add(radioButton);
-
-                        
-                    }
-                    //int rowIndex = tableLayoutPanel1.RowCount++;
-                    //tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-                    //tableLayoutPanel1.Controls.Add(newGroupBox, 0, rowIndex);
-                }
-                list.RemoveAt(randomIndex);
-            }
-           // tableLayoutPanel1.ResumeLayout();
-            conn.Close();
-        }
+        
         private void AddLabelTableRow(string labelText)
         {
             // Create the new row and set its properties
@@ -140,9 +136,9 @@ namespace WindowsFormsApp1
             }
             if (pos == currentCorrectAns)
             {
+                score++;
                 iconPictureBox2.Visible = true;
                 MessageBox.Show("Correct");
-
             }
             else
             {
@@ -156,6 +152,18 @@ namespace WindowsFormsApp1
             }
             else
             {
+                float i = (float) score / totalScore;
+                SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
+                conn.Open();
+                SQLiteCommand profileCreatecmd = new SQLiteCommand("Insert into results(username,testname,score,number_of_try) Values(@username,@testname,@score,@try)", conn);
+                profileCreatecmd.Parameters.AddWithValue("@username", username);
+                profileCreatecmd.Parameters.AddWithValue("@testname", testType);
+                profileCreatecmd.Parameters.AddWithValue("@score", i);
+                profileCreatecmd.Parameters.AddWithValue("@try", number_of_try);
+                profileCreatecmd.ExecuteNonQuery();
+                conn.Close();
+
+
                 MessageBox.Show("The test is finished");
                 this.Hide();
                 Kef1 kef1 = new Kef1(username);

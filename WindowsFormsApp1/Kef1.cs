@@ -21,14 +21,8 @@ namespace WindowsFormsApp1
 
         private void Kef1_Load(object sender, EventArgs e)
         {
-            this.MinimumSize = new System.Drawing.Size(this.Width, this.Height);
 
-            // no larger than screen size
-            this.MaximumSize = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
-            this.AutoSize = true;
-            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-
-
+            progressBar1.Value = 50;
             label4.Text = "Η ταχύτατη εξέλιξη των υπολογιστών, που σηματοδοτείται\n " +
                 "από αυξημένη υπολογιστική ισχύ, αυξημένη χωρητικότητα μνήμης\n και " +
                 "εξειδικευμένες περιφερειακές συσκευές, έχει επιτρέψει τη διάδοση\n" +
@@ -44,9 +38,7 @@ namespace WindowsFormsApp1
                 "ανταποκριθούν αναπτυξιακά και ερευνητικά \nστην ευρύτερη περιοχή" +
                 " των σύγχρονων και προηγμένων τεχνικών ανάπτυξης λογισμικού.";
             
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.AutoScroll= true;
-            tableLayoutPanel1.AutoSizeMode=AutoSizeMode.GrowAndShrink;
+            
             
         }
 
