@@ -39,10 +39,10 @@ namespace WindowsFormsApp1
             }
             else
             {
-                this.Hide();
+                
                 MainPage mainPage = new MainPage(textBox1.Text);
                 mainPage.Show();
-                this.Close();
+                this.Hide();
             }
         }
     }

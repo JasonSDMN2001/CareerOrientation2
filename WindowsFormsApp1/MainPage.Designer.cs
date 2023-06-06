@@ -53,6 +53,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -134,13 +136,14 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.progressBar1);
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(57, 526);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2341, 1293);
+            this.panel1.Size = new System.Drawing.Size(788, 713);
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
             // 
@@ -149,10 +152,9 @@
             this.panel2.AutoScroll = true;
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(643, 349);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2341, 1293);
+            this.panel2.Size = new System.Drawing.Size(761, 706);
             this.panel2.TabIndex = 8;
             this.panel2.Visible = false;
             // 
@@ -162,7 +164,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 67);
             this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
+            this.button1.Text = "back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -192,10 +194,9 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.linkLabel3);
             this.panel3.Controls.Add(this.linkLabel2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(25, 6);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2341, 1293);
+            this.panel3.Size = new System.Drawing.Size(905, 337);
             this.panel3.TabIndex = 9;
             // 
             // panel4
@@ -211,10 +212,9 @@
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Location = new System.Drawing.Point(1424, 469);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2341, 1293);
+            this.panel4.Size = new System.Drawing.Size(776, 685);
             this.panel4.TabIndex = 10;
             this.panel4.Visible = false;
             // 
@@ -309,15 +309,38 @@
             this.label14.Text = resources.GetString("label14.Text");
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(209, 530);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(158, 114);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "ξεκινα το τεστ";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.ForeColor = System.Drawing.Color.Chartreuse;
+            this.progressBar1.Location = new System.Drawing.Point(140, 455);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(217, 48);
+            this.progressBar1.Step = 1;
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 9;
+            // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(2341, 1293);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(2365, 1357);
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainPage";
@@ -360,5 +383,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

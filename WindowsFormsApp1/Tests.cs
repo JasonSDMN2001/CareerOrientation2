@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
                         number_of_try = reader.GetInt32(0);
                     }
                     conn.Close();
-                    if (number_of_try > 3)
+                    if (number_of_try > 2)
                     {
                         exceded_number_of_tries = true;
                     }
@@ -66,12 +66,13 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
+                    this.Hide();
+                    this.Close();
                     MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
                         "now redirecting back to chapter selection");
-                    this.Hide();
-                    Kef1 kef1 = new Kef1(username);
-                    kef1.Show();
-                    this.Close();
+                    MainPage mainPage = new MainPage(username);
+                    mainPage.Show();
+                    
                 }
             }
         }
@@ -162,15 +163,18 @@ namespace WindowsFormsApp1
                 profileCreatecmd.Parameters.AddWithValue("@try", number_of_try);
                 profileCreatecmd.ExecuteNonQuery();
                 conn.Close();
-
-
-                MessageBox.Show("The test is finished");
                 this.Hide();
-                Kef1 kef1 = new Kef1(username);
-                kef1.Show();
-                this.Close();
+                MessageBox.Show("The test is finished");
+                
+                //Kef1 kef1 = new Kef1(username);
+                //MainPage mainPage = new MainPage(username);
+                //mainPage.Show();    
+                //kef1.Show();
+                
             }
 
         }
+
+        
     }
 }

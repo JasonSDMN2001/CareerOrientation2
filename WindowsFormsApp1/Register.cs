@@ -23,11 +23,11 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             
             Form1 form= new Form1();
             form.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -70,10 +70,9 @@ namespace WindowsFormsApp1
                 profileCreatecmd.Parameters.AddWithValue("@gender", gender);
                 profileCreatecmd.ExecuteNonQuery();
                 conn.Close();
-                this.Hide();
                 Form1 form = new Form1();
                 form.Show();
-                this.Close();
+                this.Hide();
             }
         }
 

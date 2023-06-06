@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,25 @@ namespace WindowsFormsApp1
         private void MainPage_Load(object sender, EventArgs e)
         {
             label2.Text ="Welcome "+ username;
+            try
+            {
+                float number1=0;
+                SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
+                conn.Open();
+                String query1 = "Select MAX(score) from results where testname='test1' and username='" + username + "'";
+                SQLiteCommand cmd = new SQLiteCommand(query1, conn);
+                SQLiteDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    number1 = reader.GetFloat(0);
+                }
+                conn.Close();
+                progressBar1.Value = (int)(number1 * 100);
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -33,6 +53,7 @@ namespace WindowsFormsApp1
             //this.Close();
             panel3.Visible = false;
             panel1.Visible = true;
+            
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -63,6 +84,15 @@ namespace WindowsFormsApp1
         {
             panel3.Visible = false;
             panel4.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tests tests = new Tests(username, "test1");
+            tests.Show();
+
+            
         }
     }
 }
