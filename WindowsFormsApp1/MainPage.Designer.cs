@@ -55,6 +55,12 @@
             this.label14 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -150,6 +156,8 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.progressBar2);
+            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(643, 349);
@@ -202,6 +210,8 @@
             // panel4
             // 
             this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.progressBar3);
+            this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.label12);
@@ -329,11 +339,73 @@
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 9;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(356, 454);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(158, 114);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "ξεκινα το τεστ";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1277, 449);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(158, 114);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "ξεκινα το τεστ";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(1085, 95);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(158, 114);
+            this.button7.TabIndex = 11;
+            this.button7.Text = "ξεκινα το τεστ";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.ForeColor = System.Drawing.Color.Chartreuse;
+            this.progressBar2.Location = new System.Drawing.Point(344, 177);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(217, 48);
+            this.progressBar2.Step = 1;
+            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar2.TabIndex = 10;
+            // 
+            // progressBar3
+            // 
+            this.progressBar3.ForeColor = System.Drawing.Color.Chartreuse;
+            this.progressBar3.Location = new System.Drawing.Point(1198, 665);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(217, 48);
+            this.progressBar3.Step = 1;
+            this.progressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar3.TabIndex = 19;
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.ForeColor = System.Drawing.Color.Chartreuse;
+            this.progressBar4.Location = new System.Drawing.Point(1282, 126);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(217, 48);
+            this.progressBar4.Step = 1;
+            this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar4.TabIndex = 12;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(2341, 1293);
+            this.Controls.Add(this.progressBar4);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -385,5 +457,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.ProgressBar progressBar4;
     }
 }

@@ -23,21 +23,39 @@ namespace WindowsFormsApp1
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-            label2.Text ="Welcome "+ username;
+           
             try
             {
                 float number1=0;
+                string testType = "";
                 SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
                 conn.Open();
-                String query1 = "Select MAX(score) from results where testname='test1' and username='" + username + "'";
+                String query1 = "Select MAX(score),testname from results where username='" + username + "' group by testname";
                 SQLiteCommand cmd = new SQLiteCommand(query1, conn);
                 SQLiteDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
                     number1 = reader.GetFloat(0);
+                    testType= reader.GetString(1);
+                    if (testType == "test1")
+                    {
+                        progressBar1.Value = (int)(number1 * 100);
+                    }
+                    else if (testType == "test2")
+                    {
+                        progressBar2.Value = (int)(number1 * 100);
+                    }
+                    else if (testType == "test3")
+                    {
+                        progressBar3.Value = (int)(number1 * 100);
+                    }
+                    else if (testType == "lasttest")
+                    {
+                        progressBar4.Value = (int)(number1 * 100);
+                    }
                 }
                 conn.Close();
-                progressBar1.Value = (int)(number1 * 100);
+                
             }
             catch (Exception ex)
             {
@@ -93,6 +111,27 @@ namespace WindowsFormsApp1
             tests.Show();
 
             
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tests tests = new Tests(username, "test2");
+            tests.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tests tests = new Tests(username, "test3");
+            tests.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tests tests = new Tests(username, "lasttest");
+            tests.Show();
         }
     }
 }

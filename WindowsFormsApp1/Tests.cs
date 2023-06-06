@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
     {
         private string username { get; set; }
         private string testType { get; set; }
-        List<int> list = new List<int> { 1, 2, 3, 4, 5 };
+        List<int> list;
         Random random = new Random();
         int currentCorrectAns;
         int score=0;
@@ -31,9 +31,11 @@ namespace WindowsFormsApp1
 
         private void Tests_Load(object sender, EventArgs e)
         {
-            totalScore = list.Count;
+
             if (testType == "test1")
             {
+                list = new List<int> { 1, 2, 3, 4, 5 };
+                totalScore = list.Count;
                 bool exceded_number_of_tries = false;
                 try
                 {
@@ -55,13 +57,15 @@ namespace WindowsFormsApp1
                     {
                         number_of_try++;
                     }
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
 
                 }
                 if (!exceded_number_of_tries)
                 {
                     //populateTable(testType);
+
                     populateTable2(testType, list, random);
                 }
                 else
@@ -72,11 +76,180 @@ namespace WindowsFormsApp1
                         "now redirecting back to chapter selection");
                     MainPage mainPage = new MainPage(username);
                     mainPage.Show();
-                    
+
+                }
+            }
+            else if (testType == "test2")
+            {
+                list = new List<int> {6,7,8,9,10 };
+                totalScore = list.Count;
+                bool exceded_number_of_tries = false;
+                try
+                {
+                    SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
+                    conn.Open();
+                    String query1 = "Select MAX(number_of_try) from results where testname='" + testType + "'and username='" + username + "'";
+                    SQLiteCommand cmd = new SQLiteCommand(query1, conn);
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        number_of_try = reader.GetInt32(0);
+                    }
+                    conn.Close();
+                    if (number_of_try > 2)
+                    {
+                        exceded_number_of_tries = true;
+                    }
+                    else
+                    {
+                        number_of_try++;
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                if (!exceded_number_of_tries)
+                {
+                    //populateTable(testType);
+
+                    populateTable2(testType, list, random);
+                }
+                else
+                {
+                    this.Hide();
+                    this.Close();
+                    MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
+                        "now redirecting back to chapter selection");
+                    MainPage mainPage = new MainPage(username);
+                    mainPage.Show();
+
+                }
+            }
+            else if (testType == "test3")
+            {
+                list = new List<int> { 11,12,13,14,15 };
+                totalScore = list.Count;
+                bool exceded_number_of_tries = false;
+                try
+                {
+                    SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
+                    conn.Open();
+                    String query1 = "Select MAX(number_of_try) from results where testname='" + testType + "'and username='" + username + "'";
+                    SQLiteCommand cmd = new SQLiteCommand(query1, conn);
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        number_of_try = reader.GetInt32(0);
+                    }
+                    conn.Close();
+                    if (number_of_try > 2)
+                    {
+                        exceded_number_of_tries = true;
+                    }
+                    else
+                    {
+                        number_of_try++;
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                if (!exceded_number_of_tries)
+                {
+                    //populateTable(testType);
+
+                    populateTable2(testType, list, random);
+                }
+                else
+                {
+                    this.Hide();
+                    this.Close();
+                    MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
+                        "now redirecting back to chapter selection");
+                    MainPage mainPage = new MainPage(username);
+                    mainPage.Show();
+
+                }
+            }
+            else if (testType == "lasttest")
+            {
+                
+                bool exceded_number_of_tries = false;
+                try
+                {
+                    SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
+                    conn.Open();
+                    String query1 = "Select MAX(number_of_try) from results where testname='" + testType + "'and username='" + username + "'";
+                    SQLiteCommand cmd = new SQLiteCommand(query1, conn);
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        number_of_try = reader.GetInt32(0);
+                    }
+                    conn.Close();
+                    if (number_of_try > 2)
+                    {
+                        exceded_number_of_tries = true;
+                    }
+                    else
+                    {
+                        number_of_try++;
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                if (!exceded_number_of_tries)
+                {
+                    List<int> alist= new List<int> {1,2,3,4,5 };
+                    List<int> list2 = new List<int> { 6, 7, 8, 9, 10 };
+                    List<int> list3 = new List<int> { 11, 12, 13, 14, 15 };
+                    List<int> lastlist = new List<int>();
+                    int numElementsToSelect = 2;
+
+                    for (int i = 0; i < numElementsToSelect; i++)
+                    {
+                        int randomIndex = random.Next(alist.Count); 
+                        int randomElement = alist[randomIndex]; 
+                        lastlist.Add(15+randomElement); 
+
+                        alist.RemoveAt(randomIndex);
+                    }
+                    for (int i = 0; i < numElementsToSelect; i++)
+                    {
+                        int randomIndex = random.Next(list2.Count); 
+                        int randomElement = list2[randomIndex]; 
+                        lastlist.Add(15+randomElement); 
+
+                        list2.RemoveAt(randomIndex);
+                    }
+                    for (int i = 0; i < numElementsToSelect; i++)
+                    {
+                        int randomIndex = random.Next(list3.Count); 
+                        int randomElement = list3[randomIndex];
+                        lastlist.Add(15+randomElement); 
+
+                        list3.RemoveAt(randomIndex); 
+                    }
+                    list = lastlist;
+                    totalScore = list.Count;
+                    populateTable2(testType, list, random);
+                }
+                else
+                {
+                    this.Hide();
+                    this.Close();
+                    MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
+                        "now redirecting back to chapter selection");
+                    MainPage mainPage = new MainPage(username);
+                    mainPage.Show();
+
                 }
             }
         }
-
         private void populateTable2(String testType,List<int>list,Random random)
         {
             iconPictureBox1.Visible=false; iconPictureBox2.Visible=false;
@@ -89,12 +262,26 @@ namespace WindowsFormsApp1
             SQLiteDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                groupBox1.Text = reader.GetString(2);
-                radioButton1.Text = reader.GetString(3);
-                radioButton2.Text = reader.GetString(4);
-                radioButton3.Text = reader.GetString(5);
-                radioButton4.Text = reader.GetString(6);
-                currentCorrectAns = reader.GetInt32(7);
+                if (reader.GetString(8) == "multiple")
+                {
+                    radioButton3.Visible = true;
+                    radioButton4.Visible = true;
+                    groupBox1.Text = reader.GetString(2);
+                    radioButton1.Text = reader.GetString(3);
+                    radioButton2.Text = reader.GetString(4);
+                    radioButton3.Text = reader.GetString(5);
+                    radioButton4.Text = reader.GetString(6);
+                    currentCorrectAns = reader.GetInt32(7);
+                }
+                else if (reader.GetString(8) == "sl"){ 
+                    groupBox1.Text = reader.GetString(2);
+                    radioButton1.Text = reader.GetString(3);
+                    radioButton2.Text = reader.GetString(4);
+                    currentCorrectAns = reader.GetInt32(7);
+                    radioButton3.Visible = false;
+                    radioButton4.Visible = false;
+                }
+                
             }
         
             list.RemoveAt(randomIndex);
@@ -104,20 +291,6 @@ namespace WindowsFormsApp1
         }
 
         
-        private void AddLabelTableRow(string labelText)
-        {
-            // Create the new row and set its properties
-            //int rowIndex = tableLayoutPanel1.RowCount++;
-            //tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-
-            // Create the label and set its properties
-            Label label = new Label();
-            label.Text = labelText;
-            label.AutoSize = true;
-
-            // Add the label to a cell in the table
-            //tableLayoutPanel1.Controls.Add(label, 0, rowIndex);
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -167,8 +340,8 @@ namespace WindowsFormsApp1
                 MessageBox.Show("The test is finished");
                 
                 //Kef1 kef1 = new Kef1(username);
-                //MainPage mainPage = new MainPage(username);
-                //mainPage.Show();    
+                MainPage mainPage = new MainPage(username);
+                mainPage.Show();    
                 //kef1.Show();
                 
             }
