@@ -21,7 +21,8 @@ namespace WindowsFormsApp1
         int currentCorrectAns;
         int score=0;
         int number_of_try = 1;
-        int totalScore;
+        int totalScore,importantIndexQ=0;
+        String importantQ, correctImportantQ;
         public Tests(string username, string testType)
         {
             InitializeComponent();
@@ -280,6 +281,10 @@ namespace WindowsFormsApp1
                     currentCorrectAns = reader.GetInt32(7);
                     radioButton3.Visible = false;
                     radioButton4.Visible = false;
+                }else if (reader.GetString(9)=="true")
+                {
+                    importantQ = "true";
+                    importantIndexQ = randomNumber-15;
                 }
                 
             }
@@ -313,12 +318,19 @@ namespace WindowsFormsApp1
                 score++;
                 iconPictureBox2.Visible = true;
                 MessageBox.Show("Correct");
+                if (importantQ=="true")
+                {
+                    correctImportantQ = "true";
+                }
             }
             else
             {
                 iconPictureBox1.Visible = true;
                 MessageBox.Show("False");
-
+                if (importantQ == "true")
+                {
+                    correctImportantQ = "false";
+                }
             }
             if (list.Count > 0)
             {
@@ -329,11 +341,13 @@ namespace WindowsFormsApp1
                 float i = (float) score / totalScore;
                 SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
                 conn.Open();
-                SQLiteCommand profileCreatecmd = new SQLiteCommand("Insert into results(username,testname,score,number_of_try) Values(@username,@testname,@score,@try)", conn);
+                SQLiteCommand profileCreatecmd = new SQLiteCommand("Insert into results(username,testname,score,number_of_try,importantQ,importantN) Values(@username,@testname,@score,@try,@Q,@N)", conn);
                 profileCreatecmd.Parameters.AddWithValue("@username", username);
                 profileCreatecmd.Parameters.AddWithValue("@testname", testType);
                 profileCreatecmd.Parameters.AddWithValue("@score", i);
                 profileCreatecmd.Parameters.AddWithValue("@try", number_of_try);
+                profileCreatecmd.Parameters.AddWithValue("@Q", correctImportantQ);
+                profileCreatecmd.Parameters.AddWithValue("@N", importantIndexQ);
                 profileCreatecmd.ExecuteNonQuery();
                 conn.Close();
                 this.Hide();

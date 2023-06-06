@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
                 string testType = "";
                 SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
                 conn.Open();
-                String query1 = "Select MAX(score),testname from results where username='" + username + "' group by testname";
+                String query1 = "Select MAX(score),testname,importantQ,importantN from results where username='" + username + "' group by testname";
                 SQLiteCommand cmd = new SQLiteCommand(query1, conn);
                 SQLiteDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -55,6 +55,10 @@ namespace WindowsFormsApp1
                     else if (testType == "lasttest")
                     {
                         progressBar4.Value = (int)(number1 * 100);
+                        if (reader.GetString(2) == "false")
+                        {
+                            MessageBox.Show("You need to check test"+reader.GetInt32(3)+" again");
+                        }
                     }
                 }
                 conn.Close();
