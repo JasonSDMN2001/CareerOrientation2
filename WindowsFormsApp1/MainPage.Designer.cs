@@ -61,6 +61,15 @@
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -147,7 +156,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(57, 526);
+            this.panel1.Location = new System.Drawing.Point(2000, 597);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(788, 713);
             this.panel1.TabIndex = 7;
@@ -156,13 +165,23 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.progressBar2);
             this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(643, 349);
+            this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(761, 706);
+            this.panel2.Size = new System.Drawing.Size(2128, 1199);
             this.panel2.TabIndex = 8;
             this.panel2.Visible = false;
             // 
@@ -179,7 +198,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(180, 86);
+            this.label5.Location = new System.Drawing.Point(95, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 25);
             this.label5.TabIndex = 0;
@@ -187,7 +206,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(344, 320);
+            this.button2.Location = new System.Drawing.Point(2017, 18);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 67);
             this.button2.TabIndex = 8;
@@ -197,14 +216,16 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.progressBar4);
             this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.linkLabel1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.linkLabel3);
             this.panel3.Controls.Add(this.linkLabel2);
-            this.panel3.Location = new System.Drawing.Point(25, 6);
+            this.panel3.Location = new System.Drawing.Point(2223, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(905, 337);
+            this.panel3.Size = new System.Drawing.Size(1782, 364);
             this.panel3.TabIndex = 9;
             // 
             // panel4
@@ -222,7 +243,7 @@
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(1424, 469);
+            this.panel4.Location = new System.Drawing.Point(2255, 177);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(776, 685);
             this.panel4.TabIndex = 10;
@@ -341,7 +362,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(356, 454);
+            this.button5.Location = new System.Drawing.Point(38, 1072);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(158, 114);
             this.button5.TabIndex = 9;
@@ -361,7 +382,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(1085, 95);
+            this.button7.Location = new System.Drawing.Point(1001, 120);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(158, 114);
             this.button7.TabIndex = 11;
@@ -372,7 +393,7 @@
             // progressBar2
             // 
             this.progressBar2.ForeColor = System.Drawing.Color.Chartreuse;
-            this.progressBar2.Location = new System.Drawing.Point(344, 177);
+            this.progressBar2.Location = new System.Drawing.Point(276, 1097);
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(217, 48);
             this.progressBar2.Step = 1;
@@ -392,23 +413,101 @@
             // progressBar4
             // 
             this.progressBar4.ForeColor = System.Drawing.Color.Chartreuse;
-            this.progressBar4.Location = new System.Drawing.Point(1282, 126);
+            this.progressBar4.Location = new System.Drawing.Point(1255, 155);
             this.progressBar4.Name = "progressBar4";
             this.progressBar4.Size = new System.Drawing.Size(217, 48);
             this.progressBar4.Step = 1;
             this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar4.TabIndex = 12;
             // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(16, 121);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(984, 176);
+            this.label15.TabIndex = 13;
+            this.label15.Text = resources.GetString("label15.Text");
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.Location = new System.Drawing.Point(33, 450);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(984, 176);
+            this.label16.TabIndex = 14;
+            this.label16.Text = resources.GetString("label16.Text");
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.Location = new System.Drawing.Point(33, 274);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(984, 176);
+            this.label17.TabIndex = 15;
+            this.label17.Text = resources.GetString("label17.Text");
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.Location = new System.Drawing.Point(33, 616);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(984, 176);
+            this.label18.TabIndex = 16;
+            this.label18.Text = resources.GetString("label18.Text");
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.Location = new System.Drawing.Point(16, 792);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(984, 176);
+            this.label19.TabIndex = 17;
+            this.label19.Text = resources.GetString("label19.Text");
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(3, 893);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(984, 176);
+            this.label20.TabIndex = 18;
+            this.label20.Text = resources.GetString("label20.Text");
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.Location = new System.Drawing.Point(12, 1148);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(984, 176);
+            this.label21.TabIndex = 19;
+            this.label21.Text = resources.GetString("label21.Text");
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.Location = new System.Drawing.Point(-5, 1375);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(984, 176);
+            this.label22.TabIndex = 20;
+            this.label22.Text = resources.GetString("label22.Text");
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.Location = new System.Drawing.Point(-5, 1576);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(984, 176);
+            this.label23.TabIndex = 21;
+            this.label23.Text = resources.GetString("label23.Text");
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(2341, 1293);
-            this.Controls.Add(this.progressBar4);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -463,5 +562,14 @@
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
     }
 }

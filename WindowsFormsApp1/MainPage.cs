@@ -23,7 +23,10 @@ namespace WindowsFormsApp1
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-           
+            panel1.Dock= DockStyle.Fill;
+            panel2.Dock= DockStyle.Fill;
+            panel3.Dock= DockStyle.Fill;
+            panel4.Dock= DockStyle.Fill;
             try
             {
                 float number1=0;
