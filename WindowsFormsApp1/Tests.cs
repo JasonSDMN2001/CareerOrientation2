@@ -19,9 +19,10 @@ namespace WindowsFormsApp1
         List<int> list;
         Random random = new Random();
         int currentCorrectAns;
-        int score=0;
+        int score = 0;
         int number_of_try = 1;
-        int totalScore;
+        int totalScore, importantIndexQ = 0;
+        String importantQ = "notcorrect", correctImportantQ = "notcorrect";
         public Tests(string username, string testType)
         {
             InitializeComponent();
@@ -81,7 +82,7 @@ namespace WindowsFormsApp1
             }
             else if (testType == "test2")
             {
-                list = new List<int> {6,7,8,9,10 };
+                list = new List<int> { 6, 7, 8, 9, 10 };
                 totalScore = list.Count;
                 bool exceded_number_of_tries = false;
                 try
@@ -128,7 +129,7 @@ namespace WindowsFormsApp1
             }
             else if (testType == "test3")
             {
-                list = new List<int> { 11,12,13,14,15 };
+                list = new List<int> { 11, 12, 13, 14, 15 };
                 totalScore = list.Count;
                 bool exceded_number_of_tries = false;
                 try
@@ -175,7 +176,7 @@ namespace WindowsFormsApp1
             }
             else if (testType == "lasttest")
             {
-                
+
                 bool exceded_number_of_tries = false;
                 try
                 {
@@ -204,7 +205,7 @@ namespace WindowsFormsApp1
                 }
                 if (!exceded_number_of_tries)
                 {
-                    List<int> alist= new List<int> {1,2,3,4,5 };
+                    List<int> alist = new List<int> { 1, 2, 3, 4, 5 };
                     List<int> list2 = new List<int> { 6, 7, 8, 9, 10 };
                     List<int> list3 = new List<int> { 11, 12, 13, 14, 15 };
                     List<int> lastlist = new List<int>();
@@ -212,27 +213,27 @@ namespace WindowsFormsApp1
 
                     for (int i = 0; i < numElementsToSelect; i++)
                     {
-                        int randomIndex = random.Next(alist.Count); 
-                        int randomElement = alist[randomIndex]; 
-                        lastlist.Add(15+randomElement); 
+                        int randomIndex = random.Next(alist.Count);
+                        int randomElement = alist[randomIndex];
+                        lastlist.Add(15 + randomElement);
 
                         alist.RemoveAt(randomIndex);
                     }
                     for (int i = 0; i < numElementsToSelect; i++)
                     {
-                        int randomIndex = random.Next(list2.Count); 
-                        int randomElement = list2[randomIndex]; 
-                        lastlist.Add(15+randomElement); 
+                        int randomIndex = random.Next(list2.Count);
+                        int randomElement = list2[randomIndex];
+                        lastlist.Add(15 + randomElement);
 
                         list2.RemoveAt(randomIndex);
                     }
                     for (int i = 0; i < numElementsToSelect; i++)
                     {
-                        int randomIndex = random.Next(list3.Count); 
+                        int randomIndex = random.Next(list3.Count);
                         int randomElement = list3[randomIndex];
-                        lastlist.Add(15+randomElement); 
+                        lastlist.Add(15 + randomElement);
 
-                        list3.RemoveAt(randomIndex); 
+                        list3.RemoveAt(randomIndex);
                     }
                     list = lastlist;
                     totalScore = list.Count;
@@ -250,9 +251,9 @@ namespace WindowsFormsApp1
                 }
             }
         }
-        private void populateTable2(String testType,List<int>list,Random random)
+        private void populateTable2(String testType, List<int> list, Random random)
         {
-            iconPictureBox1.Visible=false; iconPictureBox2.Visible=false;
+            iconPictureBox1.Visible = false; iconPictureBox2.Visible = false;
             SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
             conn.Open();
             int randomIndex = random.Next(list.Count);
@@ -273,7 +274,8 @@ namespace WindowsFormsApp1
                     radioButton4.Text = reader.GetString(6);
                     currentCorrectAns = reader.GetInt32(7);
                 }
-                else if (reader.GetString(8) == "sl"){ 
+                else if (reader.GetString(8) == "sl")
+                {
                     groupBox1.Text = reader.GetString(2);
                     radioButton1.Text = reader.GetString(3);
                     radioButton2.Text = reader.GetString(4);
@@ -281,27 +283,35 @@ namespace WindowsFormsApp1
                     radioButton3.Visible = false;
                     radioButton4.Visible = false;
                 }
-                
+                if (reader.GetString(9) == "correct")
+                {
+                    importantQ = "correct";
+                    importantIndexQ = randomNumber - 15;
+                }
+
             }
-        
+
             list.RemoveAt(randomIndex);
-            
+
             //tableLayoutPanel1.ResumeLayout();
             conn.Close();
         }
 
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int pos=0;
-            if(radioButton1.Checked==true)
+            int pos = 0;
+            if (radioButton1.Checked == true)
             {
                 pos = 1;
-            }else if(radioButton2.Checked==true)
+            }
+            else if (radioButton2.Checked == true)
             {
                 pos = 2;
-            }else if (radioButton3.Checked==true) {
+            }
+            else if (radioButton3.Checked == true)
+            {
                 pos = 3;
             }
             else if (radioButton4.Checked == true)
@@ -311,12 +321,22 @@ namespace WindowsFormsApp1
             if (pos == currentCorrectAns)
             {
                 score++;
+                if (importantQ == "correct")
+                {
+                    correctImportantQ = "correct";
+                }
                 iconPictureBox2.Visible = true;
                 MessageBox.Show("Correct");
+
             }
             else
             {
                 iconPictureBox1.Visible = true;
+
+                if (importantQ == "correct")
+                {
+                    correctImportantQ = "notcorrect";
+                }
                 MessageBox.Show("False");
 
             }
@@ -326,28 +346,30 @@ namespace WindowsFormsApp1
             }
             else
             {
-                float i = (float) score / totalScore;
+                float i = (float)score / totalScore;
                 SQLiteConnection conn = new SQLiteConnection("Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;");
                 conn.Open();
-                SQLiteCommand profileCreatecmd = new SQLiteCommand("Insert into results(username,testname,score,number_of_try) Values(@username,@testname,@score,@try)", conn);
+                SQLiteCommand profileCreatecmd = new SQLiteCommand("Insert into results(username,testname,score,number_of_try,importantQ,importantN) Values(@username,@testname,@score,@try,@Q,@N)", conn);
                 profileCreatecmd.Parameters.AddWithValue("@username", username);
                 profileCreatecmd.Parameters.AddWithValue("@testname", testType);
                 profileCreatecmd.Parameters.AddWithValue("@score", i);
                 profileCreatecmd.Parameters.AddWithValue("@try", number_of_try);
+                profileCreatecmd.Parameters.AddWithValue("@Q", correctImportantQ);
+                profileCreatecmd.Parameters.AddWithValue("@N", importantIndexQ);
                 profileCreatecmd.ExecuteNonQuery();
                 conn.Close();
                 this.Hide();
                 MessageBox.Show("The test is finished");
-                
+
                 //Kef1 kef1 = new Kef1(username);
                 MainPage mainPage = new MainPage(username);
-                mainPage.Show();    
+                mainPage.Show();
                 //kef1.Show();
-                
+
             }
 
         }
 
-        
+
     }
 }
