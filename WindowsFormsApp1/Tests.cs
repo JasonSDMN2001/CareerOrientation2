@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         int score=0;
         int number_of_try = 1;
         int totalScore,importantIndexQ=0;
-        String importantQ, correctImportantQ;
+        String importantQ= "notcorrect", correctImportantQ= "notcorrect";
         public Tests(string username, string testType)
         {
             InitializeComponent();
@@ -281,9 +281,9 @@ namespace WindowsFormsApp1
                     currentCorrectAns = reader.GetInt32(7);
                     radioButton3.Visible = false;
                     radioButton4.Visible = false;
-                }else if (reader.GetString(9)=="true")
-                {
-                    importantQ = "true";
+                }
+                if (reader.GetString(9) == "correct"){
+                    importantQ = "correct";
                     importantIndexQ = randomNumber-15;
                 }
                 
@@ -316,21 +316,24 @@ namespace WindowsFormsApp1
             if (pos == currentCorrectAns)
             {
                 score++;
+                if (importantQ == "correct")
+                {
+                    correctImportantQ = "correct";
+                }
                 iconPictureBox2.Visible = true;
                 MessageBox.Show("Correct");
-                if (importantQ=="true")
-                {
-                    correctImportantQ = "true";
-                }
+                
             }
             else
             {
                 iconPictureBox1.Visible = true;
-                MessageBox.Show("False");
-                if (importantQ == "true")
+                
+                if (importantQ == "correct")
                 {
-                    correctImportantQ = "false";
+                    correctImportantQ = "notcorrect";
                 }
+                MessageBox.Show("False");
+                
             }
             if (list.Count > 0)
             {
