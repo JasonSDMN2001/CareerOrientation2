@@ -37,6 +37,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -54,6 +56,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.button6 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
@@ -67,6 +70,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -81,19 +85,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.button7 = new System.Windows.Forms.Button();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -204,6 +204,23 @@
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
             // 
+            // label43
+            // 
+            this.label43.Location = new System.Drawing.Point(35, 2109);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(729, 659);
+            this.label43.TabIndex = 29;
+            this.label43.Text = resources.GetString("label43.Text");
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(1449, 1141);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(0, 25);
+            this.label40.TabIndex = 28;
+            // 
             // label37
             // 
             this.label37.Location = new System.Drawing.Point(32, 1015);
@@ -299,7 +316,6 @@
             this.label27.Size = new System.Drawing.Size(374, 29);
             this.label27.TabIndex = 17;
             this.label27.Text = "4.Επαγγελματικές Προοπτικές";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // button1
             // 
@@ -385,6 +401,14 @@
             this.panel4.Size = new System.Drawing.Size(260, 236);
             this.panel4.TabIndex = 10;
             this.panel4.Visible = false;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(1434, 674);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(0, 25);
+            this.label41.TabIndex = 20;
             // 
             // progressBar3
             // 
@@ -519,6 +543,14 @@
             this.panel2.Size = new System.Drawing.Size(241, 222);
             this.panel2.TabIndex = 8;
             this.panel2.Visible = false;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(500, 1107);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(0, 25);
+            this.label42.TabIndex = 22;
             // 
             // label23
             // 
@@ -660,6 +692,67 @@
             this.panel3.Size = new System.Drawing.Size(1668, 673);
             this.panel3.TabIndex = 9;
             // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(1001, 466);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(0, 25);
+            this.label46.TabIndex = 19;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.ForeColor = System.Drawing.Color.Green;
+            this.label45.Location = new System.Drawing.Point(1209, 352);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(425, 25);
+            this.label45.TabIndex = 18;
+            this.label45.Text = "Μπορείς πλέον να κάνεις το ερωτηματολόγιο.";
+            this.label45.Visible = false;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.ForeColor = System.Drawing.Color.Red;
+            this.label44.Location = new System.Drawing.Point(1220, 315);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(627, 75);
+            this.label44.TabIndex = 17;
+            this.label44.Text = "Δεν μπορείς να κάνεις το ερωτηματολόγιο αυτή την στιγμή.\r\nΠρέπει να έχεις ξεκλειδ" +
+    "ώσει το τελικό τεστ και να έχεις πάρει βαθμό\r\nπαραπάνω από 60%";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.ForeColor = System.Drawing.Color.Green;
+            this.label39.Location = new System.Drawing.Point(910, 47);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(349, 25);
+            this.label39.TabIndex = 16;
+            this.label39.Text = "Το τελικό τεστ είναι πλέον διαθέσιμο.";
+            this.label39.Visible = false;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(1412, 153);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(0, 25);
+            this.label38.TabIndex = 15;
+            this.label38.Visible = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.ForeColor = System.Drawing.Color.Red;
+            this.label36.Location = new System.Drawing.Point(895, 23);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(624, 75);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "Το τελικό τεστ δεν είναι διαθέσιμο αυτή την στιγμή.\r\nΠρέπει να έχετε βαθμό παραπά" +
+    "νω του 60% σε κάθε τεστ κεφαλαίου\r\nγια να ξεκλειδωθεί.";
+            // 
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(1001, 287);
@@ -668,7 +761,6 @@
             this.button8.TabIndex = 13;
             this.button8.Text = "ερωτηματολόγιο";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Visible = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // progressBar4
@@ -692,100 +784,6 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Visible = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.ForeColor = System.Drawing.Color.Red;
-            this.label36.Location = new System.Drawing.Point(895, 23);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(624, 75);
-            this.label36.TabIndex = 14;
-            this.label36.Text = "Το τελικό τεστ δεν είναι διαθέσιμο αυτή την στιγμή.\r\nΠρέπει να έχετε βαθμό παραπά" +
-    "νω του 60% σε κάθε τεστ κεφαλαίου\r\nγια να ξεκλειδωθεί.";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(1412, 153);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(0, 25);
-            this.label38.TabIndex = 15;
-            this.label38.Visible = false;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.ForeColor = System.Drawing.Color.Green;
-            this.label39.Location = new System.Drawing.Point(910, 47);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(349, 25);
-            this.label39.TabIndex = 16;
-            this.label39.Text = "Το τελικό τεστ είναι πλέον διαθέσιμο.";
-            this.label39.Visible = false;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(1449, 1141);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(0, 25);
-            this.label40.TabIndex = 28;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(1434, 674);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(0, 25);
-            this.label41.TabIndex = 20;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(500, 1107);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(0, 25);
-            this.label42.TabIndex = 22;
-            // 
-            // label43
-            // 
-            this.label43.Location = new System.Drawing.Point(35, 2109);
-            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(729, 659);
-            this.label43.TabIndex = 29;
-            this.label43.Text = resources.GetString("label43.Text");
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.ForeColor = System.Drawing.Color.Red;
-            this.label44.Location = new System.Drawing.Point(1220, 315);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(627, 75);
-            this.label44.TabIndex = 17;
-            this.label44.Text = "Δεν μπορείς να κάνεις το ερωτηματολόγιο αυτή την στιγμή.\r\nΠρέπει να έχεις ξεκλειδ" +
-    "ώσει το τελικό τεστ και να έχεις πάρει βαθμό\r\nπαραπάνω από 60%";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.ForeColor = System.Drawing.Color.Green;
-            this.label45.Location = new System.Drawing.Point(1209, 352);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(425, 25);
-            this.label45.TabIndex = 18;
-            this.label45.Text = "Μπορείς πλέον να κάνεις το ερωτηματολόγιο.";
-            this.label45.Visible = false;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(1001, 466);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(0, 25);
-            this.label46.TabIndex = 19;
             // 
             // MainPage
             // 

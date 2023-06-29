@@ -173,12 +173,9 @@ namespace WindowsFormsApp1
 
         private void button8_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label27_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Quiz quiz = new Quiz(username);
+            quiz.Show();
         }
     }
 }
