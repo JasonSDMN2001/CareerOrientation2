@@ -43,18 +43,52 @@ namespace WindowsFormsApp1
                     if (testType == "test1")
                     {
                         progressBar1.Value = (int)(number1 * 100);
+                        label40.Text = progressBar1.Value + "%";
                     }
                     else if (testType == "test2")
                     {
                         progressBar2.Value = (int)(number1 * 100);
+                        label42.Text = progressBar2.Value + "%";
                     }
                     else if (testType == "test3")
                     {
                         progressBar3.Value = (int)(number1 * 100);
+                        label41.Text = progressBar3.Value + "%";
                     }
                     else if (testType == "lasttest")
                     {
                         progressBar4.Value = (int)(number1 * 100);
+                        label38.Text = progressBar4.Value + "%";
+                    }
+                }
+                conn.Close();
+                if(progressBar1.Value>60 && progressBar2.Value > 60 && progressBar3.Value > 60)
+                {
+                    progressBar4.Visible = true;
+                    button7.Visible= true;
+                    label38.Visible=true;
+                    label36.Visible = false;
+                    label39.Visible=true;
+                }
+                if (progressBar4.Value > 60)
+                {
+                    button8.Visible = true;
+                    label45.Visible = true;
+                    label44.Visible = false;
+                }
+                conn.Open();
+                String query2 = "Select MAX(score),importantN from results where username='" + username + "' and testname='lasttest' and importantQ='notcorrect'";
+                SQLiteCommand cmd2 = new SQLiteCommand(query2, conn);
+                SQLiteDataReader reader2 = cmd2.ExecuteReader();
+                while (reader2.Read())
+                {
+                    if (reader2.GetInt32(1) != 0)
+                    {
+                        label46.Text = "Έχεις λάθος απο το τεστ: "+reader2.GetInt32(1) + ". Πρέπει να ξαναδείς το τεστ κεφαλαίου";
+                    }
+                    else
+                    {
+                        label46.Text = "";
                     }
                 }
                 conn.Close();

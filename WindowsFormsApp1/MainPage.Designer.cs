@@ -84,6 +84,16 @@
             this.button8 = new System.Windows.Forms.Button();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.button7 = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -167,6 +177,8 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.label43);
+            this.panel1.Controls.Add(this.label40);
             this.panel1.Controls.Add(this.label37);
             this.panel1.Controls.Add(this.label35);
             this.panel1.Controls.Add(this.label34);
@@ -186,9 +198,9 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(15, 97);
+            this.panel1.Location = new System.Drawing.Point(142, 1016);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1861, 790);
+            this.panel1.Size = new System.Drawing.Size(223, 179);
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
             // 
@@ -355,6 +367,7 @@
             // panel4
             // 
             this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.label41);
             this.panel4.Controls.Add(this.progressBar3);
             this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.label14);
@@ -367,9 +380,9 @@
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(1881, 106);
+            this.panel4.Location = new System.Drawing.Point(1844, 125);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(460, 276);
+            this.panel4.Size = new System.Drawing.Size(260, 236);
             this.panel4.TabIndex = 10;
             this.panel4.Visible = false;
             // 
@@ -487,6 +500,7 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.label42);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label21);
@@ -500,9 +514,9 @@
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(1882, 454);
+            this.panel2.Location = new System.Drawing.Point(1844, 574);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(426, 345);
+            this.panel2.Size = new System.Drawing.Size(241, 222);
             this.panel2.TabIndex = 8;
             this.panel2.Visible = false;
             // 
@@ -609,7 +623,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(571, 1077);
+            this.button2.Location = new System.Drawing.Point(644, 1095);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 67);
             this.button2.TabIndex = 8;
@@ -628,6 +642,12 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label46);
+            this.panel3.Controls.Add(this.label45);
+            this.panel3.Controls.Add(this.label44);
+            this.panel3.Controls.Add(this.label39);
+            this.panel3.Controls.Add(this.label38);
+            this.panel3.Controls.Add(this.label36);
             this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.progressBar4);
             this.panel3.Controls.Add(this.label1);
@@ -635,30 +655,32 @@
             this.panel3.Controls.Add(this.linkLabel1);
             this.panel3.Controls.Add(this.linkLabel3);
             this.panel3.Controls.Add(this.linkLabel2);
-            this.panel3.Location = new System.Drawing.Point(1896, 851);
+            this.panel3.Location = new System.Drawing.Point(45, 108);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1492, 322);
+            this.panel3.Size = new System.Drawing.Size(1668, 673);
             this.panel3.TabIndex = 9;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(734, 171);
+            this.button8.Location = new System.Drawing.Point(1001, 287);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(158, 113);
+            this.button8.Size = new System.Drawing.Size(189, 107);
             this.button8.TabIndex = 13;
             this.button8.Text = "ερωτηματολόγιο";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Visible = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // progressBar4
             // 
             this.progressBar4.ForeColor = System.Drawing.Color.Chartreuse;
-            this.progressBar4.Location = new System.Drawing.Point(1254, 155);
+            this.progressBar4.Location = new System.Drawing.Point(1174, 144);
             this.progressBar4.Name = "progressBar4";
             this.progressBar4.Size = new System.Drawing.Size(217, 48);
             this.progressBar4.Step = 1;
             this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar4.TabIndex = 12;
+            this.progressBar4.Visible = false;
             // 
             // button7
             // 
@@ -668,7 +690,102 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "ξεκινα το τεστ";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Visible = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.ForeColor = System.Drawing.Color.Red;
+            this.label36.Location = new System.Drawing.Point(895, 23);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(624, 75);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "Το τελικό τεστ δεν είναι διαθέσιμο αυτή την στιγμή.\r\nΠρέπει να έχετε βαθμό παραπά" +
+    "νω του 60% σε κάθε τεστ κεφαλαίου\r\nγια να ξεκλειδωθεί.";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(1412, 153);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(0, 25);
+            this.label38.TabIndex = 15;
+            this.label38.Visible = false;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.ForeColor = System.Drawing.Color.Green;
+            this.label39.Location = new System.Drawing.Point(910, 47);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(349, 25);
+            this.label39.TabIndex = 16;
+            this.label39.Text = "Το τελικό τεστ είναι πλέον διαθέσιμο.";
+            this.label39.Visible = false;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(1449, 1141);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(0, 25);
+            this.label40.TabIndex = 28;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(1434, 674);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(0, 25);
+            this.label41.TabIndex = 20;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(500, 1107);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(0, 25);
+            this.label42.TabIndex = 22;
+            // 
+            // label43
+            // 
+            this.label43.Location = new System.Drawing.Point(35, 2109);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(729, 659);
+            this.label43.TabIndex = 29;
+            this.label43.Text = resources.GetString("label43.Text");
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.ForeColor = System.Drawing.Color.Red;
+            this.label44.Location = new System.Drawing.Point(1220, 315);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(627, 75);
+            this.label44.TabIndex = 17;
+            this.label44.Text = "Δεν μπορείς να κάνεις το ερωτηματολόγιο αυτή την στιγμή.\r\nΠρέπει να έχεις ξεκλειδ" +
+    "ώσει το τελικό τεστ και να έχεις πάρει βαθμό\r\nπαραπάνω από 60%";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.ForeColor = System.Drawing.Color.Green;
+            this.label45.Location = new System.Drawing.Point(1209, 352);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(425, 25);
+            this.label45.TabIndex = 18;
+            this.label45.Text = "Μπορείς πλέον να κάνεις το ερωτηματολόγιο.";
+            this.label45.Visible = false;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(1001, 466);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(0, 25);
+            this.label46.TabIndex = 19;
             // 
             // MainPage
             // 
@@ -755,5 +872,15 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label46;
     }
 }
