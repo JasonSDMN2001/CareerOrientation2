@@ -37,27 +37,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.button7 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.button6 = new System.Windows.Forms.Button();
@@ -71,14 +60,34 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -165,10 +174,18 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.label37);
+            this.panel1.Controls.Add(this.label35);
+            this.panel1.Controls.Add(this.label34);
+            this.panel1.Controls.Add(this.label33);
+            this.panel1.Controls.Add(this.label32);
+            this.panel1.Controls.Add(this.label31);
+            this.panel1.Controls.Add(this.label30);
+            this.panel1.Controls.Add(this.label29);
+            this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.progressBar1);
@@ -183,10 +200,88 @@
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
             // 
+            // label30
+            // 
+            this.label30.Location = new System.Drawing.Point(22, 387);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(1120, 44);
+            this.label30.TabIndex = 20;
+            this.label30.Text = "Μαθηματικά: Οι βασικές γνώσεις μαθηματικών είναι απαραίτητες, ειδικά στους τομείς" +
+    " της αλγοριθμικής, της πιθανότητας, των στατιστικών μεθόδων και του γραμμικού αλ" +
+    "γεβρικού.";
+            // 
+            // label29
+            // 
+            this.label29.Location = new System.Drawing.Point(22, 343);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(1120, 44);
+            this.label29.TabIndex = 19;
+            this.label29.Text = resources.GetString("label29.Text");
+            // 
+            // label28
+            // 
+            this.label28.Location = new System.Drawing.Point(22, 284);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(1120, 44);
+            this.label28.TabIndex = 18;
+            this.label28.Text = resources.GetString("label28.Text");
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label27.Location = new System.Drawing.Point(784, 904);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(262, 20);
+            this.label27.TabIndex = 17;
+            this.label27.Text = "4.Επαγγελματικές Προοπτικές";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(105, 1336);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 48);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label26.Location = new System.Drawing.Point(22, 609);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(108, 20);
+            this.label26.TabIndex = 16;
+            this.label26.Text = "3.Μαθήματα";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label25.Location = new System.Drawing.Point(21, 248);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(371, 20);
+            this.label25.TabIndex = 15;
+            this.label25.Text = "2.Προαπαιτούμενες γνώσεις και ικανότητες";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label24.Location = new System.Drawing.Point(21, 85);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(106, 20);
+            this.label24.TabIndex = 14;
+            this.label24.Text = "1.Εισαγωγή";
+            // 
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.Chartreuse;
-            this.progressBar1.Location = new System.Drawing.Point(392, 511);
+            this.progressBar1.Location = new System.Drawing.Point(866, 805);
             this.progressBar1.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(155, 34);
@@ -196,229 +291,14 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(206, 559);
+            this.button4.Location = new System.Drawing.Point(258, 1336);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(113, 81);
             this.button4.TabIndex = 8;
-            this.button4.Text = "ξεκινα το τεστ";
+            this.button4.Text = "Ξεκίνα το τεστ";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(107, 575);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 48);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.progressBar2);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(1158, 294);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(491, 229);
-            this.panel2.TabIndex = 8;
-            this.panel2.Visible = false;
-            // 
-            // label23
-            // 
-            this.label23.Location = new System.Drawing.Point(-4, 1126);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(703, 126);
-            this.label23.TabIndex = 21;
-            this.label23.Text = resources.GetString("label23.Text");
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            this.label22.Location = new System.Drawing.Point(-4, 982);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(703, 126);
-            this.label22.TabIndex = 20;
-            this.label22.Text = resources.GetString("label22.Text");
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.Location = new System.Drawing.Point(9, 820);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(703, 126);
-            this.label21.TabIndex = 19;
-            this.label21.Text = resources.GetString("label21.Text");
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.Location = new System.Drawing.Point(2, 638);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(703, 126);
-            this.label20.TabIndex = 18;
-            this.label20.Text = resources.GetString("label20.Text");
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.Location = new System.Drawing.Point(11, 566);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(703, 126);
-            this.label19.TabIndex = 17;
-            this.label19.Text = resources.GetString("label19.Text");
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.Location = new System.Drawing.Point(24, 440);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(703, 126);
-            this.label18.TabIndex = 16;
-            this.label18.Text = resources.GetString("label18.Text");
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.Location = new System.Drawing.Point(24, 196);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(703, 126);
-            this.label17.TabIndex = 15;
-            this.label17.Text = resources.GetString("label17.Text");
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.Location = new System.Drawing.Point(24, 321);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(703, 126);
-            this.label16.TabIndex = 14;
-            this.label16.Text = resources.GetString("label16.Text");
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.Location = new System.Drawing.Point(51, 32);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(467, 179);
-            this.label15.TabIndex = 13;
-            this.label15.Text = resources.GetString("label15.Text");
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.ForeColor = System.Drawing.Color.Chartreuse;
-            this.progressBar2.Location = new System.Drawing.Point(197, 784);
-            this.progressBar2.Margin = new System.Windows.Forms.Padding(2);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(155, 34);
-            this.progressBar2.Step = 1;
-            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar2.TabIndex = 10;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(27, 766);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 81);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "ξεκινα το τεστ";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1441, 13);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 48);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(68, 16);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "label5";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.progressBar4);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.linkLabel1);
-            this.panel3.Controls.Add(this.linkLabel3);
-            this.panel3.Controls.Add(this.linkLabel2);
-            this.panel3.Location = new System.Drawing.Point(1175, 545);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1066, 230);
-            this.panel3.TabIndex = 9;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(524, 122);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(113, 81);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "ερωτηματολόγιο";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.ForeColor = System.Drawing.Color.Chartreuse;
-            this.progressBar4.Location = new System.Drawing.Point(896, 111);
-            this.progressBar4.Margin = new System.Windows.Forms.Padding(2);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(155, 34);
-            this.progressBar4.Step = 1;
-            this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar4.TabIndex = 12;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(715, 86);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(113, 81);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "ξεκινα το τεστ";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // panel4
             // 
@@ -435,7 +315,7 @@
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(752, 266);
+            this.panel4.Location = new System.Drawing.Point(1354, 35);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(265, 246);
@@ -565,51 +445,266 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Κατεύθυνση Τεχνολογίας Λογισμικού και Ευφυή Συστήματα (ΤΛΕΣ)";
             // 
-            // label24
+            // panel2
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label24.Location = new System.Drawing.Point(21, 85);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(106, 20);
-            this.label24.TabIndex = 14;
-            this.label24.Text = "1.Εισαγωγή";
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.progressBar2);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Location = new System.Drawing.Point(1354, 324);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(491, 229);
+            this.panel2.TabIndex = 8;
+            this.panel2.Visible = false;
             // 
-            // label25
+            // label23
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label25.Location = new System.Drawing.Point(21, 248);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(371, 20);
-            this.label25.TabIndex = 15;
-            this.label25.Text = "2.Προαπαιτούμενες γνώσεις και ικανότητες";
+            this.label23.Location = new System.Drawing.Point(-4, 1126);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(703, 126);
+            this.label23.TabIndex = 21;
+            this.label23.Text = resources.GetString("label23.Text");
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label26
+            // label22
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label26.Location = new System.Drawing.Point(31, 394);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(108, 20);
-            this.label26.TabIndex = 16;
-            this.label26.Text = "3.Μαθήματα";
+            this.label22.Location = new System.Drawing.Point(-4, 982);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(703, 126);
+            this.label22.TabIndex = 20;
+            this.label22.Text = resources.GetString("label22.Text");
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label27
+            // label21
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label27.Location = new System.Drawing.Point(31, 452);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(262, 20);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "4.Επαγγελματικές Προοπτικές";
+            this.label21.Location = new System.Drawing.Point(9, 820);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(703, 126);
+            this.label21.TabIndex = 19;
+            this.label21.Text = resources.GetString("label21.Text");
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(2, 638);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(703, 126);
+            this.label20.TabIndex = 18;
+            this.label20.Text = resources.GetString("label20.Text");
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.Location = new System.Drawing.Point(11, 566);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(703, 126);
+            this.label19.TabIndex = 17;
+            this.label19.Text = resources.GetString("label19.Text");
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.Location = new System.Drawing.Point(24, 440);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(703, 126);
+            this.label18.TabIndex = 16;
+            this.label18.Text = resources.GetString("label18.Text");
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(51, 32);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(467, 179);
+            this.label15.TabIndex = 13;
+            this.label15.Text = resources.GetString("label15.Text");
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.Location = new System.Drawing.Point(24, 196);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(703, 126);
+            this.label17.TabIndex = 15;
+            this.label17.Text = resources.GetString("label17.Text");
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.Location = new System.Drawing.Point(24, 321);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(703, 126);
+            this.label16.TabIndex = 14;
+            this.label16.Text = resources.GetString("label16.Text");
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.ForeColor = System.Drawing.Color.Chartreuse;
+            this.progressBar2.Location = new System.Drawing.Point(197, 784);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(2);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(155, 34);
+            this.progressBar2.Step = 1;
+            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar2.TabIndex = 10;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(27, 766);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(113, 81);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "ξεκινα το τεστ";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1441, 13);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 48);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(68, 16);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "label5";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button8);
+            this.panel3.Controls.Add(this.progressBar4);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.button7);
+            this.panel3.Controls.Add(this.linkLabel1);
+            this.panel3.Controls.Add(this.linkLabel3);
+            this.panel3.Controls.Add(this.linkLabel2);
+            this.panel3.Location = new System.Drawing.Point(1354, 608);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1066, 230);
+            this.panel3.TabIndex = 9;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(524, 122);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(113, 81);
+            this.button8.TabIndex = 13;
+            this.button8.Text = "ερωτηματολόγιο";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.ForeColor = System.Drawing.Color.Chartreuse;
+            this.progressBar4.Location = new System.Drawing.Point(896, 111);
+            this.progressBar4.Margin = new System.Windows.Forms.Padding(2);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(155, 34);
+            this.progressBar4.Step = 1;
+            this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar4.TabIndex = 12;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(715, 86);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(113, 81);
+            this.button7.TabIndex = 11;
+            this.button7.Text = "ξεκινα το τεστ";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label31
+            // 
+            this.label31.Location = new System.Drawing.Point(22, 416);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(1120, 44);
+            this.label31.TabIndex = 21;
+            this.label31.Text = "Βάσεις Δεδομένων: Θα πρέπει να έχετε κατανόηση των βασικών αρχών των σχεσιακών βά" +
+    "σεων δεδομένων και να μπορείτε να διαχειρίζεστε δεδομένα με SQL.";
+            // 
+            // label32
+            // 
+            this.label32.Location = new System.Drawing.Point(22, 448);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(1120, 44);
+            this.label32.TabIndex = 22;
+            this.label32.Text = resources.GetString("label32.Text");
+            // 
+            // label33
+            // 
+            this.label33.Location = new System.Drawing.Point(22, 497);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(1120, 44);
+            this.label33.TabIndex = 23;
+            this.label33.Text = "Θεωρία Υπολογισμού: Κατανόηση των θεμελιωδών αρχών της θεωρίας υπολογισμού, όπως " +
+    "η λογική, οι μηχανές Turing και η πολυπλοκότητα αλγορίθμων.";
+            // 
+            // label34
+            // 
+            this.label34.Location = new System.Drawing.Point(22, 539);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(1130, 56);
+            this.label34.TabIndex = 24;
+            this.label34.Text = resources.GetString("label34.Text");
+            // 
+            // label35
+            // 
+            this.label35.Location = new System.Drawing.Point(23, 650);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(1130, 45);
+            this.label35.TabIndex = 25;
+            this.label35.Text = resources.GetString("label35.Text");
+            // 
+            // label37
+            // 
+            this.label37.Location = new System.Drawing.Point(23, 725);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(521, 471);
+            this.label37.TabIndex = 27;
+            this.label37.Text = resources.GetString("label37.Text");
             // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1374, 754);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -623,12 +718,12 @@
             this.Load += new System.EventHandler(this.MainPage_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -681,5 +776,14 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label35;
     }
 }
