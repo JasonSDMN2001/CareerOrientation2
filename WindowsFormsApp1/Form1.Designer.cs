@@ -31,7 +31,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,8 +60,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -96,16 +96,6 @@
             this.panel1.Size = new System.Drawing.Size(1855, 1088);
             this.panel1.TabIndex = 2;
             this.panel1.Visible = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.tableLayoutPanel2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1855, 1088);
-            this.panel2.TabIndex = 3;
-            this.panel2.Visible = false;
             // 
             // tableLayoutPanel1
             // 
@@ -189,12 +179,22 @@
             this.textBox2.TabIndex = 11;
             this.textBox2.Text = "123456";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tableLayoutPanel2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1855, 1088);
+            this.panel2.TabIndex = 3;
+            this.panel2.Visible = false;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.94737F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.05263F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
             this.tableLayoutPanel2.Controls.Add(this.button4, 2, 8);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
@@ -231,7 +231,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Green;
-            this.button4.Location = new System.Drawing.Point(508, 495);
+            this.button4.Location = new System.Drawing.Point(507, 495);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(113, 44);
             this.button4.TabIndex = 1;
@@ -245,7 +245,7 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(3, 331);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(211, 39);
+            this.label6.Size = new System.Drawing.Size(210, 39);
             this.label6.TabIndex = 1;
             this.label6.Text = "Gender";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -259,7 +259,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 87);
+            this.label2.Size = new System.Drawing.Size(210, 87);
             this.label2.TabIndex = 0;
             this.label2.Text = "Registration Form";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,7 +270,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(3, 273);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 58);
+            this.label3.Size = new System.Drawing.Size(210, 58);
             this.label3.TabIndex = 4;
             this.label3.Text = "E-mail(*)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -281,7 +281,7 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(3, 218);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(211, 55);
+            this.label7.Size = new System.Drawing.Size(210, 55);
             this.label7.TabIndex = 3;
             this.label7.Text = "Confirm Password(*)";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -292,7 +292,7 @@
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Location = new System.Drawing.Point(3, 149);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(211, 69);
+            this.label8.Size = new System.Drawing.Size(210, 69);
             this.label8.TabIndex = 2;
             this.label8.Text = "Password(*)";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -303,7 +303,7 @@
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Location = new System.Drawing.Point(3, 87);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(211, 62);
+            this.label9.Size = new System.Drawing.Size(210, 62);
             this.label9.TabIndex = 1;
             this.label9.Text = "Username(*)";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -314,7 +314,7 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Location = new System.Drawing.Point(3, 370);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(211, 69);
+            this.label10.Size = new System.Drawing.Size(210, 69);
             this.label10.TabIndex = 5;
             this.label10.Text = "Date of Birth";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -323,7 +323,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox1.Location = new System.Drawing.Point(220, 442);
+            this.checkBox1.Location = new System.Drawing.Point(219, 442);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(282, 47);
             this.checkBox1.TabIndex = 6;
@@ -336,7 +336,7 @@
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Location = new System.Drawing.Point(3, 492);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(211, 83);
+            this.label11.Size = new System.Drawing.Size(210, 83);
             this.label11.TabIndex = 7;
             this.label11.Text = "(*)All the fields with an asteric must be completed";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -344,7 +344,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(220, 495);
+            this.button5.Location = new System.Drawing.Point(219, 495);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(106, 41);
             this.button5.TabIndex = 8;
@@ -354,28 +354,28 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(220, 90);
+            this.textBox3.Location = new System.Drawing.Point(219, 90);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(269, 29);
             this.textBox3.TabIndex = 9;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(220, 152);
+            this.textBox4.Location = new System.Drawing.Point(219, 152);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(269, 29);
             this.textBox4.TabIndex = 10;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(220, 221);
+            this.textBox5.Location = new System.Drawing.Point(219, 221);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(269, 29);
             this.textBox5.TabIndex = 11;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(220, 276);
+            this.textBox6.Location = new System.Drawing.Point(219, 276);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(269, 29);
             this.textBox6.TabIndex = 12;
@@ -383,28 +383,30 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(220, 334);
+            this.radioButton1.Location = new System.Drawing.Point(219, 334);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(80, 29);
             this.radioButton1.TabIndex = 13;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(508, 334);
+            this.radioButton2.Location = new System.Drawing.Point(507, 334);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(102, 29);
             this.radioButton2.TabIndex = 14;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged_1);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(220, 373);
+            this.dateTimePicker1.Location = new System.Drawing.Point(219, 373);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(269, 29);
             this.dateTimePicker1.TabIndex = 15;
@@ -431,9 +433,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel3.ResumeLayout(false);

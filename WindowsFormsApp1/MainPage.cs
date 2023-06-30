@@ -15,10 +15,14 @@ namespace WindowsFormsApp1
     public partial class MainPage : Form
     {
         private string username { get; set; }
-        public MainPage(string username)
+        private string quizResults { get; set; }
+        private string quizResults2 { get; set; }
+        public MainPage(string username,string quizResults,string quizResults2)
         {
             InitializeComponent();
             this.username = username;   
+            this.quizResults = quizResults;
+            this.quizResults2 = quizResults2;
         }
 
         private void MainPage_Load(object sender, EventArgs e)
@@ -92,6 +96,16 @@ namespace WindowsFormsApp1
                     }
                 }
                 conn.Close();
+                if (quizResults != "")
+                {
+                    label12.Visible= true;
+                    label12.Text = "Προτάσεις επαγγελμάτων σχετικές με τις προτιμήσεις και ικανότητες σου: \n" + quizResults;
+                }
+                if (quizResults2 != "")
+                {
+                    label13.Visible = true;
+                    label13.Text = "Προτάσεις μεταπτυχιακών σπουδών σχετικές με τις προτιμήσεις και ικανότητες σου: \n" + quizResults2;
+                }
                 
             }
             catch (Exception ex)

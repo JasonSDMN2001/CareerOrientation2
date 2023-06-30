@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        String gender;
+        String gender="";
 
         public Form1()
         {
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
             else
             {
 
-                MainPage mainPage = new MainPage(textBox1.Text);
+                MainPage mainPage = new MainPage(textBox1.Text,"","");
                 mainPage.Show();
                 this.Hide();
             }
@@ -103,12 +103,15 @@ namespace WindowsFormsApp1
                 String db = "Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "career_base.db;Version=3;";
                 SQLiteConnection conn = new SQLiteConnection(db);
                 conn.Open();
-                SQLiteCommand profileCreatecmd = new SQLiteCommand("Insert into users(username,password,email,birthdate,gender) Values(@username,@password,@email,@birthdate,@gender)", conn);
+                SQLiteCommand profileCreatecmd = new SQLiteCommand("Insert into users(username,password,email,birthdate,gender,kef1clicks,kef2clicks,kef3clicks) Values(@username,@password,@email,@birthdate,@gender,@kef1,@kef2,@kef3)", conn);
                 profileCreatecmd.Parameters.AddWithValue("@username", textBox3.Text);
                 profileCreatecmd.Parameters.AddWithValue("@password", textBox4.Text);
                 profileCreatecmd.Parameters.AddWithValue("@email", textBox6.Text);
                 profileCreatecmd.Parameters.AddWithValue("@birthdate", dateTimePicker1.Text);
                 profileCreatecmd.Parameters.AddWithValue("@gender", gender);
+                profileCreatecmd.Parameters.AddWithValue("@kef1", 0);
+                profileCreatecmd.Parameters.AddWithValue("@kef2", 0);
+                profileCreatecmd.Parameters.AddWithValue("@kef3", 0);
                 profileCreatecmd.ExecuteNonQuery();
                 conn.Close();
                 panel2.Visible = false;
@@ -116,14 +119,16 @@ namespace WindowsFormsApp1
                 panel1.Visible = false;
             }
         }
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            gender = "Female";
-        }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
             gender = "Male";
+        }
+
+        private void radioButton2_CheckedChanged_1(object sender, EventArgs e)
+        {
+            gender = "Female";
         }
     }
 }

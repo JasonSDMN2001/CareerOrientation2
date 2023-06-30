@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
                     this.Close();
                     MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
                         "now redirecting back to chapter selection");
-                    MainPage mainPage = new MainPage(username);
+                    MainPage mainPage = new MainPage(username, "","");
                     mainPage.Show();
 
                 }
@@ -122,7 +122,7 @@ namespace WindowsFormsApp1
                     this.Close();
                     MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
                         "now redirecting back to chapter selection");
-                    MainPage mainPage = new MainPage(username);
+                    MainPage mainPage = new MainPage(username, "", ""   );
                     mainPage.Show();
 
                 }
@@ -169,7 +169,7 @@ namespace WindowsFormsApp1
                     this.Close();
                     MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
                         "now redirecting back to chapter selection");
-                    MainPage mainPage = new MainPage(username);
+                    MainPage mainPage = new MainPage(username, "", "");
                     mainPage.Show();
 
                 }
@@ -245,7 +245,7 @@ namespace WindowsFormsApp1
                     this.Close();
                     MessageBox.Show("You have exceded the max number of tries for this test!\n\n " +
                         "now redirecting back to chapter selection");
-                    MainPage mainPage = new MainPage(username);
+                    MainPage mainPage = new MainPage(username, "", "");
                     mainPage.Show();
 
                 }
@@ -362,7 +362,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("The test is finished");
 
                 //Kef1 kef1 = new Kef1(username);
-                MainPage mainPage = new MainPage(username);
+                MainPage mainPage = new MainPage(username, "", "");
                 mainPage.Show();
                 //kef1.Show();
 
