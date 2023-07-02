@@ -300,5 +300,40 @@ namespace WindowsFormsApp1
             panel5.Visible=false;
             panel3.Visible=true;
         }
+
+        private void circularButton1_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Είστε σίγουροι ότι θέλετε να τερματίσετε την εφαρμογή;", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dr == DialogResult.Yes)
+            {
+                Application.ExitThread();
+
+            }
+            else
+            { }
+        }
+
+        private void circularButton2_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Είστε σίγουροι ότι θέλετε να επιστρέψετε στην προηγούμενη σελίδα;", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+            { }
+        }
+
+        private void circularButton3_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel1.Visible = false;
+        }
+
+        private void circularButton3_Click_1(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel1.Visible = false;
+        }
     }
 }
