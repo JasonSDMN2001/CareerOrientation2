@@ -165,9 +165,10 @@ namespace WindowsFormsApp1
 
             string sortedLabelsString = string.Join("\n", sortedLabels);
 
-            MessageBox.Show("Συγχαρητήρια το επάγγελμα που σου αρμόζει είναι με την εξής φθίνουσα σειρά:\n" + sortedLabelsString);
+           // MessageBox.Show("Συγχαρητήρια! Τα επαγγέλματα που σου ταιριάζουν βάση των απαντήσεών σου είναι ιεραρχικά τα εξής:\n" + sortedLabelsString);
+            MessageBox.Show("Συγχαρητήρια! Τα επαγγέλματα που σου ταιριάζουν βάση των απαντήσεών σου είναι ιεραρχικά τα εξής:\n" + sortedLabelsString, "Επιτυχής εκτέλεση", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            List<(int score2, string label2)> scores2 = new List<(int score2, string label2)>
+            List <(int score2, string label2)> scores2 = new List<(int score2, string label2)>
             {
                 (score7, "Ανάπτυξη λογισμικού και τεχνητής νοημοσύνης"),
                 (score8, "Κατανεμημένα Συστήματα")
@@ -180,7 +181,8 @@ namespace WindowsFormsApp1
 
             string sortedLabelsString2 = string.Join("\n", sortedLabels2);
 
-            MessageBox.Show("Συγχαρητήρια το μεταπτυχιακό που σου αρμόζει είναι:\n" + sortedLabelsString2);
+            //MessageBox.Show("Συγχαρητήρια! Το μεταπτυχιακό πρόγραμμα που ταιριάζει στις προτιμήσεις σου είναι:\n" + sortedLabelsString2);
+            MessageBox.Show("Συγχαρητήρια! Το μεταπτυχιακό πρόγραμμα που ταιριάζει στις προτιμήσεις σου είναι:\n" + sortedLabelsString2, "Επιτυχής εκτέλεση", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             MainPage mainPage = new MainPage(username, sortedLabelsString, sortedLabelsString2);
             mainPage.Show();
