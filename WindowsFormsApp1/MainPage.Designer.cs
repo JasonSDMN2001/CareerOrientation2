@@ -245,10 +245,10 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(24, 685);
+            this.panel1.Location = new System.Drawing.Point(26, 698);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(337, 130);
+            this.panel1.Size = new System.Drawing.Size(345, 234);
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
             // 
@@ -383,7 +383,7 @@
             this.panel4.Location = new System.Drawing.Point(11, 11);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1285, 665);
+            this.panel4.Size = new System.Drawing.Size(1264, 652);
             this.panel4.TabIndex = 10;
             this.panel4.Visible = false;
             // 
