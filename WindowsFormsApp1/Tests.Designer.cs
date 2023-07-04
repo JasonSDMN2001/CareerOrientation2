@@ -51,7 +51,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.Green;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 120;
-            this.iconPictureBox2.Location = new System.Drawing.Point(151, 261);
+            this.iconPictureBox2.Location = new System.Drawing.Point(151, 326);
             this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(122, 120);
@@ -67,7 +67,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.Red;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 120;
-            this.iconPictureBox1.Location = new System.Drawing.Point(19, 261);
+            this.iconPictureBox1.Location = new System.Drawing.Point(19, 326);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(121, 120);
@@ -87,14 +87,14 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(699, 242);
+            this.groupBox1.Size = new System.Drawing.Size(699, 308);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // radioButton4
             // 
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton4.Location = new System.Drawing.Point(32, 181);
+            this.radioButton4.Location = new System.Drawing.Point(32, 255);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(161, 30);
@@ -105,7 +105,7 @@
             // radioButton3
             // 
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton3.Location = new System.Drawing.Point(32, 136);
+            this.radioButton3.Location = new System.Drawing.Point(32, 210);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(161, 30);
@@ -116,7 +116,7 @@
             // radioButton2
             // 
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton2.Location = new System.Drawing.Point(32, 102);
+            this.radioButton2.Location = new System.Drawing.Point(32, 176);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(161, 30);
@@ -127,7 +127,7 @@
             // radioButton1
             // 
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.radioButton1.Location = new System.Drawing.Point(32, 69);
+            this.radioButton1.Location = new System.Drawing.Point(32, 143);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(161, 30);
@@ -139,7 +139,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button1.Location = new System.Drawing.Point(19, 391);
+            this.button1.Location = new System.Drawing.Point(19, 456);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 93);
