@@ -107,7 +107,7 @@ namespace WindowsFormsApp1
                 if (quizResults2 != "")
                 {
                     label13.Visible = true;
-                    label13.Text = "Προτάσεις μεταπτυχιακών σπουδών σχετικές με τις προτιμήσεις και ικανότητες σου: \n" + quizResults2;
+                    label13.Text = "Προτάσεις μεταπτυχιακών σπουδών σχετικές με τις προτιμήσεις σου: \n" + quizResults2;
                 }
 
                 conn.Open();

@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
     public partial class Quiz : Form
     {
         private string username { get; set; }
-        private int score1, score2, score3, score4, score5, score6,score7, score8;
+        private int score1, score2, score3, score4, score5, score6, score7, score8;
         public Quiz(string username)
         {
             InitializeComponent();
@@ -25,11 +25,11 @@ namespace WindowsFormsApp1
         {
             if (radioButton6.Checked == true)
             {
-                
+
                 score1++;
                 score7++;
             }
-            if(radioButton7.Checked == true)
+            /*if(radioButton7.Checked == true)
             {
                 score2++;
                 score8++;
@@ -40,6 +40,113 @@ namespace WindowsFormsApp1
             if(radioButton17.Checked == true) 
             {
                 score4++;
+            } */
+
+
+
+            if (radioButton27.Checked == true)
+            {
+                score4++;
+                score5++;
+            }
+            if (radioButton30.Checked == true)
+            {
+                score3++;
+                score4++;
+                score7++;
+            }
+            if (radioButton25.Checked == true)
+            {
+                score1++;
+                score2++;
+                score7++;
+            }
+            if (radioButton13.Checked == true || radioButton14.Checked == true || radioButton15.Checked == true)
+            {
+                score2++;
+            }
+            if (radioButton19.Checked == true)
+            {
+                score1++;
+                score7++;
+            }
+            if (radioButton7.Checked == true || radioButton12.Checked == true || radioButton21.Checked == true)
+            {
+                score3++;
+                score7++;
+            }
+            if (radioButton9.Checked == true || radioButton8.Checked == true)
+            {
+                score3++;
+                score7++;
+            }
+            if (radioButton33.Checked == true || radioButton29.Checked == true)
+            {
+                score5++;
+                score7++;
+            }
+            if (radioButton38.Checked == true)
+            {
+                score5++;
+                score7++;
+            }
+            if (radioButton40.Checked == true)
+            {
+                score5++;
+                score7++;
+            }
+            if (radioButton43.Checked == true || radioButton42.Checked == true)
+            {
+                score6++;
+                score8++;
+            }
+            if (radioButton46.Checked == true)
+            {
+                score6++;
+            }
+            if (radioButton48.Checked == true)
+            {
+                score6++;
+                score3++;
+                score5++;
+            }
+            if (radioButton50.Checked == true)
+            {
+                score6++;
+                score8++;
+            }
+            if (radioButton53.Checked == true || radioButton52.Checked == true)
+            {
+                score5++;
+            }
+            if (radioButton58.Checked == true)
+            {
+                score1++;
+                score7++;
+            }
+            if (radioButton59.Checked == true)
+            {
+                score6++;
+            }
+            if (radioButton61.Checked == true || radioButton60.Checked == true)
+            {
+                score1++;
+                score2++;
+                score7++;
+            }
+            if (radioButton67.Checked == true || radioButton66.Checked == true)
+            {
+                score1++;
+                score2++;
+                score3++;
+                score4++;
+                score5++;
+                score7++;
+            }
+            if (radioButton73.Checked == true || radioButton72.Checked == true)
+            {
+                score1++;
+                score7++;
             }
             
             List<(int score, string label)> scores = new List<(int score, string label)>
@@ -62,8 +169,8 @@ namespace WindowsFormsApp1
 
             List<(int score2, string label2)> scores2 = new List<(int score2, string label2)>
             {
-                (score7, "Ανάπτηξη λογισμικου και τεχνητής νοημοσυνης"),
-                (score8, "κατανεμημένα συστηματα")
+                (score7, "Ανάπτυξη λογισμικού και τεχνητής νοημοσύνης"),
+                (score8, "Κατανεμημένα Συστήματα")
                 
             };
 
