@@ -360,5 +360,11 @@ namespace WindowsFormsApp1
             Tests tests = new Tests(username, "test2");
             tests.Show();
         }
+
+        private void circularButton6_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel4.Visible = false;
+        }
     }
 }

@@ -50,15 +50,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -131,6 +125,17 @@
             this.label77 = new System.Windows.Forms.Label();
             this.circularButton5 = new WindowsFormsApp1.CircularButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.circularButton6 = new WindowsFormsApp1.CircularButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -358,131 +363,79 @@
             // panel4
             // 
             this.panel4.AutoScroll = true;
+            this.panel4.BackColor = System.Drawing.Color.LightBlue;
+            this.panel4.Controls.Add(this.label81);
+            this.panel4.Controls.Add(this.label80);
+            this.panel4.Controls.Add(this.label79);
+            this.panel4.Controls.Add(this.label16);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label78);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label22);
+            this.panel4.Controls.Add(this.circularButton6);
+            this.panel4.Controls.Add(this.label20);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label17);
-            this.panel4.Controls.Add(this.label16);
-            this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Location = new System.Drawing.Point(1334, 134);
+            this.panel4.Location = new System.Drawing.Point(11, 11);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(324, 183);
+            this.panel4.Size = new System.Drawing.Size(1285, 665);
             this.panel4.TabIndex = 10;
             this.panel4.Visible = false;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(39, 690);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label11.Location = new System.Drawing.Point(40, 1161);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1236, 153);
+            this.label11.Size = new System.Drawing.Size(1236, 445);
             this.label11.TabIndex = 28;
             this.label11.Text = resources.GetString("label11.Text");
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(39, 554);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label8.Location = new System.Drawing.Point(39, 901);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1084, 85);
+            this.label8.Size = new System.Drawing.Size(1219, 246);
             this.label8.TabIndex = 27;
             this.label8.Text = resources.GetString("label8.Text");
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label10.Location = new System.Drawing.Point(39, 498);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(713, 17);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "3.Μηχανικοί Ενδυνάμωσης Λογισμικού με Τεχνητή Νοημοσύνη(AI Empowered Software Eng" +
-    "ineers)";
-            // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(39, 359);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label9.Location = new System.Drawing.Point(40, 544);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(1141, 122);
+            this.label9.Size = new System.Drawing.Size(1141, 244);
             this.label9.TabIndex = 25;
             this.label9.Text = resources.GetString("label9.Text");
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label7.Location = new System.Drawing.Point(39, 321);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(329, 17);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "2.Μηχανικοί Λογισμικού(Software Engineers)";
-            // 
             // label17
             // 
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label17.Location = new System.Drawing.Point(39, 127);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(1141, 194);
+            this.label17.Size = new System.Drawing.Size(1141, 323);
             this.label17.TabIndex = 23;
             this.label17.Text = resources.GetString("label17.Text");
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label16.Location = new System.Drawing.Point(39, 75);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(394, 17);
-            this.label16.TabIndex = 22;
-            this.label16.Text = "1.Προγραμματιστές λογισμικού(Software Developers)";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label6.Location = new System.Drawing.Point(34, 16);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(412, 29);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "ΕΠΑΓΓΕΛΜΑΤΙΚΕΣ ΠΡΟΟΠΤΙΚΕΣ";
-            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(906, 962);
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button6.ForeColor = System.Drawing.Color.Blue;
+            this.button6.Location = new System.Drawing.Point(521, 3967);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(113, 81);
+            this.button6.Size = new System.Drawing.Size(170, 69);
             this.button6.TabIndex = 18;
-            this.button6.Text = "ξεκινα το τεστ";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Text = "Ξεκίνα το τεστ";
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // label14
-            // 
-            this.label14.Location = new System.Drawing.Point(14, 962);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(703, 126);
-            this.label14.TabIndex = 17;
-            this.label14.Text = resources.GetString("label14.Text");
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(1071, 978);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 48);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label41
             // 
@@ -546,10 +499,10 @@
             this.panel2.Controls.Add(this.label49);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(30, 11);
+            this.panel2.Location = new System.Drawing.Point(1319, 444);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1252, 638);
+            this.panel2.Size = new System.Drawing.Size(249, 211);
             this.panel2.TabIndex = 8;
             this.panel2.Visible = false;
             // 
@@ -1342,6 +1295,126 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label20.ForeColor = System.Drawing.Color.Blue;
+            this.label20.Location = new System.Drawing.Point(422, 1);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(478, 32);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "ΕΠΑΓΓΕΛΜΑΤΙΚΕΣ ΠΡΟΟΠΤΙΚΕΣ";
+            // 
+            // circularButton6
+            // 
+            this.circularButton6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.circularButton6.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.back;
+            this.circularButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.circularButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.circularButton6.Location = new System.Drawing.Point(402, 3970);
+            this.circularButton6.Name = "circularButton6";
+            this.circularButton6.Size = new System.Drawing.Size(79, 66);
+            this.circularButton6.TabIndex = 35;
+            this.circularButton6.UseVisualStyleBackColor = false;
+            this.circularButton6.Click += new System.EventHandler(this.circularButton6_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label22.Location = new System.Drawing.Point(37, 70);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(540, 25);
+            this.label22.TabIndex = 36;
+            this.label22.Text = "1.Προγραμματιστές Λογισμικού(Software Developers)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label6.Location = new System.Drawing.Point(37, 497);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(447, 25);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "2.Μηχανικοί Λογισμικού(Software Engineers)";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label78.Location = new System.Drawing.Point(37, 839);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(971, 25);
+            this.label78.TabIndex = 38;
+            this.label78.Text = "3.Μηχανικοί Ενδυνάμωσης Λογισμικού με Τεχνητή Νοημοσύνη(AI Empowered Software Eng" +
+    "ineers)";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label7.Location = new System.Drawing.Point(39, 1634);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(619, 25);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "4. Μηχανικοί μηχανικής μάθησης(Machine Learning Engineers)";
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label10.Location = new System.Drawing.Point(40, 1692);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(1141, 533);
+            this.label10.TabIndex = 40;
+            this.label10.Text = resources.GetString("label10.Text");
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label16.Location = new System.Drawing.Point(39, 2283);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(476, 25);
+            this.label16.TabIndex = 41;
+            this.label16.Text = "5. Ειδικοί Τεχνητής Νοημοσύνης(AI specialists)";
+            // 
+            // label79
+            // 
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label79.Location = new System.Drawing.Point(40, 2345);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(1141, 761);
+            this.label79.TabIndex = 42;
+            this.label79.Text = resources.GetString("label79.Text");
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label80.Location = new System.Drawing.Point(39, 3160);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(492, 25);
+            this.label80.TabIndex = 43;
+            this.label80.Text = "6. Σχεδιαστές εμπειρίας χρηστών(UX Designers)";
+            // 
+            // label81
+            // 
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label81.Location = new System.Drawing.Point(40, 3227);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(1141, 694);
+            this.label81.TabIndex = 44;
+            this.label81.Text = resources.GetString("label81.Text");
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1394,8 +1467,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button6;
@@ -1420,13 +1491,9 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button9;
@@ -1484,5 +1551,16 @@
         private System.Windows.Forms.Label label76;
         private CircularButton circularButton5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label22;
+        private CircularButton circularButton6;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label16;
     }
 }
