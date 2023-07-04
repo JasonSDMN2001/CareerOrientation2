@@ -335,5 +335,30 @@ namespace WindowsFormsApp1
             panel3.Visible = true;
             panel1.Visible = false;
         }
+
+        private void circularButton2_Click_1(object sender, EventArgs e)
+        {
+            panel5.Visible = false;
+            panel3.Visible = true;
+        }
+
+        private void circularButton4_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel2.Visible = false;
+        }
+
+        private void circularButton5_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel2.Visible = false;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tests tests = new Tests(username, "test2");
+            tests.Show();
+        }
     }
 }
