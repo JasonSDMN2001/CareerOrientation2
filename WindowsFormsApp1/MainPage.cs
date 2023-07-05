@@ -366,5 +366,10 @@ namespace WindowsFormsApp1
             panel3.Visible = true;
             panel4.Visible = false;
         }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Help.ShowHelp(this, @"C:\Users\micha\source\repos\JasonSDMN2001\CareerOrientation2\onlinehelp.chm", HelpNavigator.TopicId, "22");
+        }
     }
 }

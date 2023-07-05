@@ -15,6 +15,12 @@ namespace WindowsFormsApp1
     {
         private string username { get; set; }
         private int score1, score2, score3, score4, score5, score6, score7, score8;
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Help.ShowHelp(this, @"C:\Users\micha\source\repos\JasonSDMN2001\CareerOrientation2\onlinehelp.chm", HelpNavigator.TopicId, "60");
+        }
+
         public Quiz(string username)
         {
             InitializeComponent();

@@ -145,5 +145,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Help.ShowHelp(this, @"C:\Users\micha\source\repos\JasonSDMN2001\CareerOrientation2\onlinehelp.chm");
+        }
     }
 }

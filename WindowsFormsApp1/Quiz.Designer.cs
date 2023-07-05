@@ -126,6 +126,7 @@
             this.radioButton73 = new System.Windows.Forms.RadioButton();
             this.radioButton74 = new System.Windows.Forms.RadioButton();
             this.radioButton75 = new System.Windows.Forms.RadioButton();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -153,6 +154,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel1.Controls.Add(this.linkLabel4);
             this.panel1.Controls.Add(this.groupBox20);
             this.panel1.Controls.Add(this.groupBox19);
             this.panel1.Controls.Add(this.groupBox18);
@@ -1432,6 +1434,18 @@
             this.radioButton75.Text = "καθόλου";
             this.radioButton75.UseVisualStyleBackColor = true;
             // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.linkLabel4.Location = new System.Drawing.Point(1151, 23);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(168, 18);
+            this.linkLabel4.TabIndex = 37;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Χρειάζεστε βοήθεια;";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1589,5 +1603,6 @@
         private System.Windows.Forms.RadioButton radioButton73;
         private System.Windows.Forms.RadioButton radioButton74;
         private System.Windows.Forms.RadioButton radioButton75;
+        private System.Windows.Forms.LinkLabel linkLabel4;
     }
 }
