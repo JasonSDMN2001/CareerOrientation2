@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Help.ShowHelp(this, @"C:\Users\micha\source\repos\JasonSDMN2001\CareerOrientation2\onlinehelp.chm", HelpNavigator.TopicId, "60");
+            Help.ShowHelp(this, @"onlinehelp.chm", HelpNavigator.TopicId, "60");
         }
 
         public Quiz(string username)
